@@ -34,7 +34,7 @@ func main() {
 
 	go func() {
 		fmt.Println("start creating new http server")
-		fmt.Println("👷🏼 app listening on port 🚧 8080 🚧")
+		fmt.Println("👷🏼 V2 app listening on port 🚧 8080 🚧")
 		http.HandleFunc("/api/v1/health", health)
 		errs <- http.ListenAndServe(":8080", nil)
 	}()
